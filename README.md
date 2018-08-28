@@ -1,0 +1,1 @@
+# sketch-automatic-aspect-ratio
