@@ -1,0 +1,81 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.js",
+      "name" : "Automatic Aspect Ratio",
+			"handlers": {
+        "actions": {
+            "HandlerLostFocus": "autoRatio",
+						"SelectionChanged" : "autoRatio"
+        }
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    },
+		{
+			"script": "script.js",
+			"name": "Ratio 1:1",
+			"handlers": {
+				"run": "ratio1_1"
+			},
+			"identifier": "ratio1_1"
+		},
+		{
+			"script": "script.js",
+			"name": "Ratio 3:1",
+			"handlers": {
+				"run": "ratio3_1"
+			},
+			"identifier": "ratio3_1"
+		},
+		{
+			"script": "script.js",
+			"name": "Ratio 3:2",
+			"handlers": {
+				"run": "ratio3_2"
+			},
+			"identifier": "ratio3_2"
+		},
+		{
+			"script": "script.js",
+			"name": "Ratio 4:3",
+			"handlers": {
+				"run": "ratio4_3"
+			},
+			"identifier": "ratio4_3"
+		},
+		{
+			"script": "script.js",
+			"name": "Ratio 16:9",
+			"handlers": {
+				"run": "ratio16_9"
+			},
+			"identifier": "ratio16_9"
+		},
+		{
+			"script": "script.js",
+			"name": "Ratio 16:10",
+			"handlers": {
+				"run": "ratio16_10"
+			},
+			"identifier": "ratio16_10"
+		},
+  ],
+  "menu" : {
+    "title" : "Automatic Aspect Ratio",
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier",
+			"ratio1_1",
+			"ratio3_1",
+			"ratio3_2",
+			"ratio4_3",
+			"ratio16_9",
+			"ratio16_10",
+    ]
+  },
+  "identifier" : "com.example.sketch.febd17e2-0325-4819-94d9-0b645fca7228",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "Automatic Aspect Ratio"
+}
