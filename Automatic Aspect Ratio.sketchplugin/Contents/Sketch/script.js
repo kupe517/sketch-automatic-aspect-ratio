@@ -11,7 +11,7 @@ var autoRatio = function(context) {
 	}
 
 	selection.layers.forEach(layer => {
-		if(layer.type !== 'ShapePath' || layer === undefined){
+		if(layer.type !== 'ShapePath' || layer === undefined || layer.type === 'Shape'){
 			return;
 		}
 		var layerName = layer.name;
@@ -64,7 +64,7 @@ var ratio16_10 = function(context){
 
 var renameLayers = function(name){
 	selection.layers.forEach(layer => {
-		if(layer.type === 'ShapePath'){
+		if(layer.type === 'ShapePath' || layer.type === 'Shape'){
 			var layerName = layer.name;
 			if(layerName.includes("*")){
 				var cleanName = layerName.split('*');
